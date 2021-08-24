@@ -11,7 +11,7 @@ app.use('/storybook', express.static('dist/storybook'));
 app.use(express.static('dist/app'));
 
 app.get('/api/', async (_req, res) => {
-  res.status(200).send('API is running');
+  res.status(200).json({ message: 'API is running' });
 });
 
 app.listen(port, async () => {
