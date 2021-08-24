@@ -10,6 +10,10 @@ app.disable('x-powered-by');
 app.use('/storybook', express.static('dist/storybook'));
 app.use(express.static('dist/app'));
 
+app.get('/api/', async (_req, res) => {
+  res.status(200).json({ message: 'API is running' });
+});
+
 app.listen(port, async () => {
   console.log(`Listening at http://localhost:${port}`);
   console.log(`Storybook is at http://localhost:${port}/storybook`);
