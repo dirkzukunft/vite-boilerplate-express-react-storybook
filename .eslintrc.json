@@ -11,5 +11,8 @@
     "sourceType": "module"
   },
   "plugins": ["@typescript-eslint"],
-  "rules": { "max-len": ["error", { "code": 100 }] }
+  "rules": {
+    "max-len": ["error", { "code": 100 }],
+    "@typescript-eslint/consistent-type-imports": "error"
+  }
 }
