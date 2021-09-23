@@ -19,6 +19,7 @@ app.get('*', (_request, response) => {
 });
 
 app.listen(port, async () => {
-  console.log(`Listening at http://localhost:${port}`);
-  console.log(`Storybook is at http://localhost:${port}/storybook`);
+  console.log(`Frontend listening at http://localhost:3000`);
+  console.log(`Backend listening at http://localhost:${port}`);
+  console.log(`Storybook is at http://localhost:6006`);
 });
